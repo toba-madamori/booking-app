@@ -6,10 +6,10 @@ import (
 )
 
 func main() {
-	var conferenceName string = "Go conference"
 	var remainingTickets uint = 50
+	conferenceName := "Golang Explosion"
 
-	fmt.Println("Welcome to our", conferenceName, "booking application")
+	greetUsers(conferenceName)
 	fmt.Println("Thank you for booking a ticket for the Go conference")
 
 	fmt.Printf("At the moment %v tickets are still available\n", remainingTickets)
@@ -75,4 +75,8 @@ func main() {
 		fmt.Println("No valid city selected")
 	}
 
+}
+
+func greetUsers(confName string) {
+	fmt.Printf("Welcome to our %v conference\n", confName)
 }
