@@ -62,4 +62,17 @@ func main() {
 		}
 	}
 
+	city := "london"
+
+	switch city {
+	case "New York":
+		fmt.Println("The city's name is New york")
+	case "london":
+		fmt.Println("The city's name is london")
+	case "Berlin", "Mexico City":
+		fmt.Println("The city's name is either Berlin or Mexico")
+	default:
+		fmt.Println("No valid city selected")
+	}
+
 }
